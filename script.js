@@ -31,9 +31,9 @@ function checkAnswers(){
             //each time there is a correct answer this value increases
             score++;
             if(score === 5){
-                results.innerHTML = `<h3> You had no wrong answers! Congratulations! :) </h3>`;
+                results.innerHTML = 
             }else if(score !== 0){
-                results.innerHTML = `<h3> You had <span> ${score} </span> out of <span> ${total} </span Right answers </h3>`;;
+                results.innerHTML = `<h3> You answered <span> ${score} </span> out of <span> ${total} </span Right answers </h3>`;;
             }
         }else if(score === 0){
             results.innerHTML = `<h3>You did not answer any question correctly </h3>`;
