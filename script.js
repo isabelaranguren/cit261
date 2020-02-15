@@ -1,4 +1,4 @@
-function submitAnswers(){
+function checkAnswers(){
     var total = 5;
     var score = 0;
     // Get user input 
