@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    background-color: #F5F5F5; 
+    font-family: Merriweather;
+  }
+
+  * {
+    box-sizing: border-box;
+  }  
+
+.quiz-container {
+    max-width: 600px;
+    min-height: 600px;
+    background-color: white;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 30px;
+  
+  }
+ 
+div #quiz{ 
+    max-width: 600px;
+    min-height: 500px;
+    background-color: white;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 30px;
+
+}
