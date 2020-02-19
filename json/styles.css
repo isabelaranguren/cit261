@@ -1,0 +1,28 @@
+body {
+    background-color: whitesmoke;
+    color:rgb(42, 70, 70);
+}
+.formBox {
+    padding: 5px 5px 5px 5px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+* {
+	box-sizing: border-box;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.formContainer {
+    height: 320px;
+	width: 500px;
+	background-color: rgb(203, 229, 236);
+	margin: 60px auto;
+	border-radius: 8px;
+	padding: 20px;
+
+}
