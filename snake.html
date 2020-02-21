@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Snake game</title>
+    <style>
+        body {
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gc" width="400" height="400"></canvas>
+<script>
+window.onload=function() {
+    canv = document.getElementById("gc");
+	ctx = canv.getContext("2d");
+	document.addEventListener("keydown",keyPush);
+	setInterval(game,1000/15);
+}
+
+// Sets up the initial conditions of the game
+posx = posy = 10;
+gs = tc = 20;
+apple_x = apple_y = 15;
+x_velocity = y_velocity = 0;
+
+trail = [];
+tail = 4;
+
+/* Handles the responsiblity of drawing all elements. */
+function game() {
+	posx += x_velocity;
+	posy += y_velocity;
+    
+    if( posx < 0) {
+		posx = tc-1;
+	}
+	if (posx >tc -1) {
+		posx= 0;
+	}
+	if (posy < 0) {
+		posy= tc-1;
+	}
+	if (posy > tc - 1) {
+        posy= 0;
+    }
+    
+    ctx.fillStyle="white";
+    ctx.fillRect(0,0,canv.width,canv.height);
+
+	ctx.fillStyle="grey";
+    
+    for(var i = 0;i< trail.length; i++) {
+		ctx.fillRect (trail[i].x * gs, trail[i].y * gs, gs -2 , gs - 2);
+		if (trail[i].x == posx && trail[i].y == posy) {
+            tail = 5;
+		}
+	}
+	trail.push({x : posx, y : posy});
+	while(trail.length>tail) {
+	trail.shift();
+	}
+
+	if (apple_x == posx && apple_y == posy) {
+		tail++;
+		apple_x = Math.floor(Math.random()* tc);
+		apple_y = Math.floor(Math.random()* tc );
+	}
+	ctx.fillStyle = "red";
+	ctx.fillRect(apple_x * gs, apple_y * gs,gs - 2, gs - 2);
+}
+
+/* Checks to see if the user is holding down an
+ arrow key, and if so, takes appropriate action.*/
+function keyPush(event) {
+	switch(event.keyCode) {
+		case 37:
+			x_velocity =- 1; y_velocity = 0;
+			break;
+		case 38:
+			x_velocity = 0; y_velocity =-1;
+			break;
+		case 39:
+			x_velocity =1; y_velocity = 0;
+			break;
+		case 40:
+			x_velocity = 0; y_velocity = 1;
+			break;
+	}
+}
+</script>
+</body>
+</html>
