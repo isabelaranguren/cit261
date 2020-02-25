@@ -1,0 +1,26 @@
+[
+    {
+      "name": "julian",
+      "gender": "boy",
+      "foods": {
+        "likes": ["pancakes"],
+        "dislikes": ["lettuce"]
+      }
+    },
+    {
+      "name": "Emma",
+      "gender": "girl",
+      "foods": {
+        "likes": ["poptarts", "strawberries"],
+        "dislikes": ["pizza"]
+      }
+    },
+    {
+      "name": "Cristina",
+      "gender": "girl",
+      "foods": {
+        "likes": ["pizza"],
+        "dislikes": ["carrots"]
+      }
+    }
+]
