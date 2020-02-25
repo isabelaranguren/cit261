@@ -1,0 +1,26 @@
+[
+    {
+      "name": "Mary",
+      "gender": "girl",
+      "foods": {
+        "likes": ["cookies"],
+        "dislikes": ["avocados"]
+      }
+    },
+    {
+      "name": "Mike",
+      "gender": "boy",
+      "foods": {
+        "likes": ["pineapple", "strawberries"],
+        "dislikes": ["brocolli"]
+      }
+    },
+    {
+      "name": "Adam",
+      "gender": "boy",
+      "foods": {
+        "likes": ["asian food"],
+        "dislikes": ["fast food"]
+      }
+    }
+]
