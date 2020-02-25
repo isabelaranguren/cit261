@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Putting User Input into JS Objects</title>
-    <script src="json.js" async defer></script>
+    <title>JSON stringify</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="formContainer">
     <form>
         <div class="formBox">
-            <label for="author">Name:</label>
-            <input type="text" id="author" placeholder="Author's Name"/>
+            <label for="title">Name:</label>
+            <input type="text" id="author" placeholder="Title"/>
         </div>
         <div class="formBox">
-            <label for="title">Book title:</label>
+            <label for="title">Book:</label>
             <input type="text" id="title" placeholder="Title"/>
         </div>
         <div class="formBox">
@@ -24,12 +23,38 @@
             <input type="number" id="yr" placeholder="Year"/>
         </div>
         <div class="formBox">
-            <button id="btn">Click to Add</button>
+            <button id="btn">Add</button>
         </div>
         <div id="msg">
             <pre></pre>
         </div>
     </form>
-</div>
+    </div>
+    <script>
+        let books = [];
+    
+        const addbook = (event)=>{
+            event.preventDefault();  //stops the form submitting
+            let book = {
+                author: document.getElementById('author').value,
+                title: document.getElementById('title').value,
+                year: document.getElementById('yr').value
+            }
+            books.push(book);
+            document.forms[0].reset(); // to clear the form for the next entries
+   
+
+            //for display purposes only
+            console.warn('added' , {books} );
+            let pre = document.querySelector('#msg pre');
+            pre.textContent = '\n' + JSON.stringify(books, '\t', 2);
+
+            //saves list to a localStorage
+            localStorage.setItem('MybookList', JSON.stringify(books) );
+        }
+        document.addEventListener('DOMContentLoaded', ()=>{
+            document.getElementById('btn').addEventListener('click', addbook);
+        });
+    </script>
 </body>
 </html>
