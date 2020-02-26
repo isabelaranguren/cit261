@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>DOM</title>
+</head>
+<body>
+    <h1 class="title">DOM: Document Object Model</h1>
+    <h4 id="subparagraph">The Document Object Model (DOM) is a programming interface for HTML and XML documents.<br> 
+        It represents the page so that programs can change the document structure, style, and content.<br> 
+        The DOM represents the document as nodes and objects. That way, programming languages can <br>
+        connect to the page.</p>
+    <h3>1) Using the createElement and appendChild</h3>
+    <p>What do you call baby porcupines?</p>
+    <p id="demo"></p>
+    <button class="btn" onclick="myFunction()">Click Me!</button>
+    <h3>2) Using the insertBefore</h3>
+     <p>Click the button to insert a tak to the list.</p>
+        
+		<button onclick="addKitchen()"> Kitchen </button>
+        <button onclick="addTrash()"> Taking out trash </button>
+        <ul id="demo2"> 
+			<li> Sweep the living room </li>
+			<li> Clean the closet </li>
+			<li> Wash the dishes </li>
+        </ul>
+    <h3>3) Using the removeChild</h2>
+        <p> Lets add to your grocery list. </p>
+
+			<button onclick="deleteBagels()"> Delete Bagels </button>
+			<button onclick="deleteEggs()"> Delete Eggs </button>
+			<button onclick="deleteAvocados()"> Avocados </button>
+        <ul id="demo3"> 
+            <li id="bagels"> Bagels</li>
+            <li id="eggs"> Eggs</li>
+            <li id="avocados"> Avocados</li>
+        </ul>
+                
+    <h3>4) Using the replaceChild command. </h2>
+        <div>
+            <span id="childSpan">“If my life is going to mean anything,<br>
+                I have to live it myself.”</span>
+            <br>
+        </div>
+        <br>
+        <button onclick="replaceQuote()"> Click here! </button>
+<script src="dom.js"></script>
+</body>
+</html>
