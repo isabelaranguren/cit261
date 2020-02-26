@@ -13,7 +13,9 @@ h1 {
     line-height: 1.7;
   }
 
-
+h2 {
+  color: rgb(28, 68, 87);
+}
 .btn {
     background-color: black;
     color: cornsilk;
@@ -22,4 +24,8 @@ h1 {
 .example {
   font-style: italic;
   
+}
+
+.youtube {
+  margin: 5px;
 }

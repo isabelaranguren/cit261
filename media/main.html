@@ -9,21 +9,54 @@
 </head>
 <body>
     <h1>Guide to HTML5’s Media Tags – Audio and Video</h1>
-    <h3>The audio Tag</h3>
+    <h2>The &lt;audio&gt; Tag</h3>
     <p>The audio tag allows you to put a music file directly into the HTML code without the use of a plugin,<br>
         such as Flash or Javascript. There are three types of audio formats that are compatible with this tag:<br>
         ogg, .mp3 and .wav.</p>
-     
-    <p>Example Code</p>
+
+        <p>Example Code</p>
         <pre class="prettyprint">
         &lt;audio src="audio.mp3" controls="controls"&gt;
             Your browser does not support the audio element&lt;/audio&gt;
         </pre>
-        
-    
-        <audio src="actions.mp3" controls="controls">Your browser does not support the audio element</audio>
-    
-    
+
+        <div>
+            <audio controls>
+            <source src="https://isabelaranguren.github.io/media/mmm-whatcha-say.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        &nbsp;
+        &nbsp;
+    <h2>The &lt;video&gt; Tag</h3>
+    <p>There are only three video formats that are supported with the &lt;video&gt; tag, they are:<br>
+         .ogg, MPEG4 and WebM.</p>
+        <p>Example code</p>
+        <pre class="prettyprint">
+            &lt;video id="demo" width="460"&gt;
+            &lt;source src="audio.mp3" type="video/mp4"&gt;
+                Your browser does not support the audio element&gt;
+            &lt;/video&gt;  
+            </pre>
+            
+        <div style="text-align:left"> 
+            <button onclick="playPause()">Play/Pause</button> 
+            <button onclick="makeBig()">Big</button>
+            <button onclick="makeSmall()">Small</button>
+            <button onclick="makeNormal()">Normal</button>
+            <br><br>
+        <video id="video1" width="460">
+            <source src="https://isabelaranguren.github.io/media/y2mate.com%20-%20AHHHHH_yBLdQ1a4-JI_360p.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+      </video>
+    </div>
+    &nbsp;
+    &nbsp;
+    <h2>Playing a YouTube Video in HTML</h3>
+    <div class="youtube">
+    <iframe width="460" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+    </iframe>
+    <script src="media.js"></script>
+    </div>
     
 </body>
 </html>
