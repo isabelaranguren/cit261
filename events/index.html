@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+</head>
+    <link rel="stylesheet" href="styles.css" />
+    <body onload="load()"></body>
+    <h1>JavasScript Events</h3>
+
+    <div>
+        <h2>Mouse Events</h2>
+        <p>Onclick:<p>
+        <button class ="btn" onclick="alert('Hello World!')">Inline Event Call</button>
+        <button class ="btn" onclick="displayMessage()">Inline Event Call to a function</button>
+        <button id="button1">Event Call from the DOM</button>
+      </div>
+      <p>Click the paragrah to change the color</p>
+      <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+    <em>Head in the clouds but my gravity is centered</em></p>
+      <p>With Transitions:</p>
+      <div class="transition">Hover over me</div>
+      <p>With Animations:</p>
+      <p>This example uses the addEventListener() method to attach an "animationstart", "animationiteration" and "animationend" event to a DIV element.</p>
+      <div id="myDIV" onclick="myFunction()">Click me to start the animation.</div>
+      <h2>For Mobile Devices</h2>
+      <p ontouchstart="load()">Touch this paragraph to trigger a function that will write "Hello World".</p>
+      <p id="demo"></p>
+    <script src="main.js"></script>
+</body>
+</html>
