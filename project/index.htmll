@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Envato Weather App</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<header>
+			<input type="text" id="city" class="seach-bar" placeholder="Enter your zipcode"><br>
+			<button type"button id="btn" onclick="getCurrentData()">Enter</button>
+		</header>
+		  <main> 
+			<div id = "icon"></div>
+			<div class="summary">
+				<p class="label"><span id="temp"></span></p>
+				<p class="label"><span id="description"></span></p>
+				<p class="label"><span id="todaytemp"></span></p>
+				<p class="label">Wind Speed: <span id="windspeed"></span></p>
+				<p class="label">Wind Chill: <span id="chill_text"></span></p>
+				<p class="label">Wind Direction: <span id="winddirection"></span></p>
+			    <p class="label">Humidity: <span id="humidity"></span>%</p>
+			</div>
+		  </main>
+		  <footer>
+			<p><a href="http://openweathermap.org/">OpenWeatherMap API</a></p>
+		  </footer>
+	<script src="script.js"></script>
+	</body>
+</html>
