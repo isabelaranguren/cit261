@@ -7,27 +7,25 @@ body {
   
 }
 h3 {
-	font-style: italic;
-	line-height: 0.5em;
-	margin-top: 0px;
-	color: grey;
-	text-align: center;
-	font-weight: 700px;
-    font-size: 1.5em;
+  font-style: italic;
+  line-height: 0.5em;
+  margin-top: 0px;
+  color: grey;
+  text-align: center;
+  font-weight: 700px;
+  font-size: 1.5em;
 }
 
 h2 {
-	margin-top: 0px;
+    margin-top: 0px;
     color: #0e4749;
-  text-align: center;
+ text-align: center;
  font-weight: 700px;
  font-size: 32px;
  font-size: 2em;
 }
 
-h3 {
 
-}
 
 /* STRUCTURE */
 
@@ -67,31 +65,29 @@ header {
 }
  
 .column:hover {
-		background-color: rgba(163, 184, 163, 0.158);
-		cursor: pointer;
-	  }
+	background-color: rgba(163, 184, 163, 0.158);
+	cursor: pointer;
+}
 
 #city {
-	transition: opacity 2s;
+     transition: opacity 2s;
 
 }
 
 @media screen and (max-width: 980px) {
   .columns .column {
-		margin-bottom: 5px;
+	margin-bottom: 5px;
 	flex-basis: 40%;
 	text-align: center;
 	}
 }
 
 @media screen and (max-width: 680px) {
-	.columns .column .icon_container {
-		flex-basis: 100%;
-		margin: 0 0 5px 0;
-		text-align: center;
-	
-	}
-}
+      .columns .column .icon_container {
+      flex-basis: 100%;
+      margin: 0 0 5px 0;
+      text-align: center;
+ }}
 
 .label  {
     border-bottom: 1px dotted #DDD;
