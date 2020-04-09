@@ -148,8 +148,8 @@ header {
 .rain {
 	width: 100px;
 	height: 100px;
-	-webkit-animation: mover 3.5s infinite  alternate;
-	animation: mover 3.5s infinite  alternate;
+	-webkit-animation: rain 3.5s infinite  alternate;
+	animation: rain 3.5s infinite  alternate;
 }
 @keyframes rain {
 	50% { transform: translateY(-20px); }
@@ -208,41 +208,6 @@ header {
 	}
 }
 
-table {
-	background: #012B39;
-	border-radius: 0.25em;
-	border-collapse: collapse;
-	margin-left:auto; 
-    margin-right:auto;
-  }
-
-  th {
-	border-bottom: 1px solid #364043;
-	color: white;
-	font-size: 0.85em;
-	font-weight: 600;
-	padding: 0.5em 1em;
-	text-align: left;
-  }
-
-  td {
-	color: #fff;
-	font-weight: 400;
-	padding: 0.3em;
-  }
-
-  .container{
-	  display: none;
-  }
-
-.forecast {
-  top: 530px;
-  position: relative;
-  height: 150px;
-  text-align: center;
-  margin-left:auto; 
-  margin-right:auto;
-}
 #colored {
 	background-color: rgba(170, 214, 212, 0.945);
 }
